@@ -1,0 +1,26 @@
+Alternative RPC Endpoints for Celo Alfajores
+
+If the default endpoint times out, try these alternatives in your .env file:
+
+1. Ankr (Recommended):
+   CELO_RPC_URL=https://rpc.ankr.com/celo_alfajores
+
+2. Thirdweb:
+   CELO_RPC_URL=https://alfajores.rpc.thirdweb.com
+
+3. QuickNode (requires account):
+   CELO_RPC_URL=https://your-endpoint.quiknode.pro/YOUR_KEY
+
+4. Infura (requires API key):
+   CELO_RPC_URL=https://celo-alfajores.infura.io/v3/YOUR_INFURA_KEY
+
+5. Public Node (backup):
+   CELO_RPC_URL=https://alfajores-forno.celo-testnet.org
+
+To use an alternative endpoint:
+1. Open packages/hardhat/.env
+2. Add or update: CELO_RPC_URL=https://rpc.ankr.com/celo_alfajores
+3. Save the file
+4. Run: npm run test-rpc (to test)
+5. Run: npm run deploy (to deploy)
+
